@@ -53,16 +53,16 @@ sections:
         icon: favicon
         url: https://gitlab.com/airasia-superapp/delivery/aa-ride
         id: 0_2411_ride_repos
-      - title: Code Beat
-        description: Quality and complexity checking
+      - title: Programmiz
+        description: Online javascript compiler
         icon: favicon
-        url: https://codebeat.co/projects/github-com-lissy93-dashy-master
-        id: 1_2411_codebeat
-      - title: Is Maintained
-        description: Issue status and response times
-        url: https://isitmaintained.com/project/lissy93/dashy
+        url: https://www.programiz.com/javascript/online-compiler/
+        id: 1_2411_programiz
+      - title: 
+        description: Typescript Playground
+        url: https://www.typescriptlang.org/play/?#
         icon: favicon
-        id: 2_2411_ismaintained
+        id: 2_2411_typescript_playground
       - title: FOSSA
         description: Dependency license checking
         url: https://app.fossa.com/reports/f57fe27a-cc0d-496d-a48f-bdc50147199b
