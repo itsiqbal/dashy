@@ -58,16 +58,16 @@ sections:
         icon: favicon
         url: https://www.programiz.com/javascript/online-compiler/
         id: 1_2411_programiz
-      - title: 
-        description: Typescript Playground
-        url: https://www.typescriptlang.org/play/?#
+      - title: TS-Playground
+        description: Typescript
         icon: favicon
-        id: 2_2411_typescript_playground
-      - title: FOSSA
-        description: Dependency license checking
-        url: https://app.fossa.com/reports/f57fe27a-cc0d-496d-a48f-bdc50147199b
+        url: https://www.typescriptlang.org/play
+        id: 0_2411_typescript_play_ground
+      - title: Ride firebase
+        description: Ride firebase
+        url: https://console.firebase.google.com/u/0/project/dacsee-global/config/env/firebase
         icon: favicon
-        id: 3_2411_fossa
+        id: 3_2411_ride_firebase
       - title: Sonatype
         description: Automated code security scanning
         icon: favicon
@@ -176,17 +176,17 @@ sections:
     icon: fas fa-sparkles
     items:
       - title: HackerTab
-        icon: favicon
+        icon: generative
         url: https://now.hackertab.dev/
         id: 0_1998_hacker_tab
       - title: Daily Dev
         url: https://app.daily.dev/
         icon: favicon
         id: 1_1998_daily_dev
-      - title: Alternative To
+      - title: Freedium
         icon: favicon
-        url: https://alternativeto.net/software/dashy/about/
-        id: 2_1998_alternativeto
+        url: https://freedium.cfd/
+        id: 2_1998_freedium
       - title: StackShare
         url: https://stackshare.io/Lissy93/dashy
         icon: favicon
