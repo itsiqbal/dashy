@@ -137,14 +137,14 @@ sections:
         url: https://console.cloud.google.com/firestore/databases?project=amazing-modem-199209
         icon: favicon
         id: 2_2115_firestore_stg
-  - name: Deployment & Monitoring
+  - name: Important Portals
     icon: fas fa-rocket-launch
     items:
-      - title: Netlify
-        description: Dev Demo CI and Deployment
-        url: https://app.netlify.com/sites/dashy-dev/deploys
+      - title: Backoffice Admin
+        description: Backoffice admin portal
+        url: https://ride.stgairasia.com/admin/MY
         icon: favicon
-        id: 0_2221_netlify
+        id: 0_2221_backoffice_admin_portal
       - title: MeerCode
         description: Build status for GH actions
         icon: https://meercode.io/favicon/android-icon-144x144.png
