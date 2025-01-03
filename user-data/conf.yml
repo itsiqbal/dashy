@@ -143,18 +143,17 @@ sections:
       - title: Backoffice Admin
         description: Backoffice admin portal
         url: https://ride.stgairasia.com/admin/MY
-        icon: favicon
+        icon: fas fa-rocket-launch
         id: 0_2221_backoffice_admin_portal
-      - title: MeerCode
-        description: Build status for GH actions
-        icon: https://meercode.io/favicon/android-icon-144x144.png
-        url: >-
-          https://meercode.io/public/dashboard/0a73f116846f6954ba6f3a0b65b13e77:e7f5a35dc463db291e70dffc0c05fc7a945bc571bdc889cd1c64b2f99fb2a5249d93250bbf4655c59db10095f9c9c051
-        id: 1_2221_meercode
-      - title: Status Page
-        description: Uptime Monitoring
+      - title: Moths 
+        description: Crashlytics Dashboard
+        icon: 
+        url: https://lookerstudio.google.com/reporting/7de4eae7-d959-4923-ba02-36a6e90031a4/page/tEnnC
+        id: 1_2221_moths_crashlytics_dashboard
+      - title: Clockify
+        description: Time logs for company
         provider: Up Down
-        url: https://updown.io/p/b0bkd
+        url: https://app.clockify.me/tracker
         icon: favicon
         id: 2_2221_statuspage
       - title: GitLocalize
