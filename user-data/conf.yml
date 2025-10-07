@@ -1,5 +1,5 @@
 appConfig:
-  theme: dashy-docs
+  theme: tiger
   customCss: >-
     @media (min-width: 1780px) { .home
     .item-group-container:not(.item-size-large) { grid-template-columns:
@@ -20,7 +20,7 @@ appConfig:
   enableFontAwesome: true
   fontAwesomeKey: 2e949c5bf4
   faviconApi: allesedv
-  workspaceLandingUrl: https://dashy.to
+  workspaceLandingUrl: itsiqbal.com
   enableMultiTasking: false
   layout: auto
   iconSize: medium
@@ -108,17 +108,17 @@ sections:
       sortBy: most-used
     items:
       - title: Ride GCP dev
-        description: Ride - google cloud dev project  
+        description: Ride - google cloud dev project
         url: https://console.cloud.google.com/welcome?hl=en&project=airasia-ride-dev
         icon: favicon
         id: 0_2115_gcp_dev
       - title: Ride GCP stg
-        description: Ride - google cloud stg project 
+        description: Ride - google cloud stg project
         url: https://console.cloud.google.com/welcome?hl=en&project=airasia-ride-stg-368614
         icon: favicon
         id: 1_2115_gcp_stg
       - title: Ride GCP PRD
-        description: Ride - google cloud PRD project 
+        description: Ride - google cloud PRD project
         url: https://console.cloud.google.com/welcome?hl=en&project=amazing-modem-199209
         icon: favicon
         id: 1_2115_gcp_prd
@@ -145,9 +145,9 @@ sections:
         url: https://ride.stgairasia.com/admin/MY
         icon: fas fa-rocket-launch
         id: 0_2221_backoffice_admin_portal
-      - title: Moths 
+      - title: Moths
         description: Crashlytics Dashboard
-        icon: 
+        icon:
         url: https://lookerstudio.google.com/reporting/7de4eae7-d959-4923-ba02-36a6e90031a4/page/tEnnC
         id: 1_2221_moths_crashlytics_dashboard
       - title: Clockify
@@ -231,141 +231,141 @@ sections:
         url: https://dashy.to
         statusCheck: true
         id: 2_1288_unknown
-  # - name: Repo
-  #   icon: fab fa-github-alt
-  #   displayData:
-  #     itemSize: small
-  #     sectionLayout: grid
-  #     itemCountX: 2
-  #   items:
-  #     - title: Issues
-  #       url: https://github.com/Lissy93/dashy/issues
-  #       icon: generative
-  #       id: 0_406_issues
-  #     - title: Pull Requests
-  #       url: https://github.com/Lissy93/dashy/pulls
-  #       icon: generative
-  #       id: 1_406_pullrequests
-  #     - title: Releases
-  #       url: https://github.com/Lissy93/dashy/releases
-  #       icon: generative
-  #       id: 2_406_releases
-  #     - title: Discussions
-  #       url: https://github.com/Lissy93/dashy/discussions
-  #       icon: generative
-  #       id: 3_406_discussions
-  #     - title: Packages
-  #       url: https://github.com/Lissy93?tab=packages&repo_name=dashy
-  #       icon: generative
-  #       id: 4_406_packages
-  #     - title: Insights
-  #       url: https://github.com/Lissy93/dashy/pulse
-  #       icon: generative
-  #       id: 5_406_insights
-  #     - title: Wiki
-  #       url: https://github.com/Lissy93/dashy/wiki
-  #       icon: generative
-  #       id: 6_406_wiki
-  #     - title: Security
-  #       url: https://github.com/Lissy93/dashy/security
-  #       icon: generative
-  #       id: 7_406_security
-  #     - title: Contributors
-  #       url: https://github.com/Lissy93/dashy/graphs/contributors
-  #       icon: generative
-  #       id: 8_406_contributors
-  #     - title: Actions
-  #       url: https://github.com/Lissy93/dashy/actions
-  #       icon: generative
-  #       id: 9_406_actions
-  # - name: Usage Docs
-  #   icon: fas fa-book
-  #   displayData:
-  #     itemSize: small
-  #     sectionLayout: grid
-  #     itemCountX: 2
-  #   items:
-  #     - title: Quick Start
-  #       icon: 💨
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/quick-start.md
-  #       id: 0_926_quickstart
-  #     - title: Deployment
-  #       icon: 🚀
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/deployment.md
-  #       id: 1_926_deployment
-  #     - title: Configuring
-  #       icon: 🔧
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-  #       id: 2_926_configuring
-  #     - title: Management
-  #       icon: 💻
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/management.md
-  #       id: 3_926_management
-  #     - title: Troubleshooting
-  #       icon: 🚒
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/troubleshooting.md
-  #       id: 4_926_troubleshooting
-  #     - title: Developing
-  #       icon: 🧱
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/developing.md
-  #       id: 5_926_developing
-  #     - title: Dev Guides
-  #       icon: 🛎️
-  #       url: >-
-  #         https://github.com/Lissy93/dashy/blob/master/docs/development-guides.md
-  #       id: 6_926_devguides
-  #     - title: Contributing
-  #       icon: 💖
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/contributing.md
-  #       id: 7_926_contributing
-  #     - title: Showcase
-  #       icon: 🌟
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-  #       id: 8_926_showcase
-  #     - title: Credits
-  #       icon: 🏆
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/credits.md
-  #       id: 9_926_credits
-  # - name: Feature Docs
-  #   icon: fas fa-book-spells
-  #   displayData:
-  #     itemSize: small
-  #     sectionLayout: grid
-  #     itemCountX: 2
-  #   items:
-  #     - title: Authentication
-  #       icon: 🛡️
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/authentication.md
-  #       id: 0_1141_authentication
-  #     - title: Alternate Views
-  #       icon: 🧿
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/alternate-views.md
-  #       id: 1_1141_alternateviews
-  #     - title: Backup & Restore
-  #       icon: 💾
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/backup-restore.md
-  #       id: 2_1141_backuprestore
-  #     - title: Icons
-  #       icon: 🧸
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/icons.md
-  #       id: 3_1141_icons
-  #     - title: Language Switching
-  #       icon: 🌐
-  #       url: >-
-  #         https://github.com/Lissy93/dashy/blob/master/docs/multi-language-support.md
-  #       id: 4_1141_languageswitching
-  #     - title: Status Indicators
-  #       icon: 🚦
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/status-indicators.md
-  #       id: 5_1141_statusindicators
-  #     - title: Searching  & Shortcuts
-  #       icon: 🔍
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/searching.md
-  #       id: 6_1141_searchingshortcuts
-  #     - title: Theming
-  #       icon: 🎨
-  #       url: https://github.com/Lissy93/dashy/blob/master/docs/theming.md
-  #       id: 7_1141_theming
+  - name: Repo
+    icon: fab fa-github-alt
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+    items:
+      - title: Issues
+        url: https://github.com/Lissy93/dashy/issues
+        icon: generative
+        id: 0_406_issues
+      - title: Pull Requests
+        url: https://github.com/Lissy93/dashy/pulls
+        icon: generative
+        id: 1_406_pullrequests
+      - title: Releases
+        url: https://github.com/Lissy93/dashy/releases
+        icon: generative
+        id: 2_406_releases
+      - title: Discussions
+        url: https://github.com/Lissy93/dashy/discussions
+        icon: generative
+        id: 3_406_discussions
+      - title: Packages
+        url: https://github.com/Lissy93?tab=packages&repo_name=dashy
+        icon: generative
+        id: 4_406_packages
+      - title: Insights
+        url: https://github.com/Lissy93/dashy/pulse
+        icon: generative
+        id: 5_406_insights
+      - title: Wiki
+        url: https://github.com/Lissy93/dashy/wiki
+        icon: generative
+        id: 6_406_wiki
+      - title: Security
+        url: https://github.com/Lissy93/dashy/security
+        icon: generative
+        id: 7_406_security
+      - title: Contributors
+        url: https://github.com/Lissy93/dashy/graphs/contributors
+        icon: generative
+        id: 8_406_contributors
+      - title: Actions
+        url: https://github.com/Lissy93/dashy/actions
+        icon: generative
+        id: 9_406_actions
+  - name: Usage Docs
+    icon: fas fa-book
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+    items:
+      - title: Quick Start
+        icon: 💨
+        url: https://github.com/Lissy93/dashy/blob/master/docs/quick-start.md
+        id: 0_926_quickstart
+      - title: Deployment
+        icon: 🚀
+        url: https://github.com/Lissy93/dashy/blob/master/docs/deployment.md
+        id: 1_926_deployment
+      - title: Configuring
+        icon: 🔧
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        id: 2_926_configuring
+      - title: Management
+        icon: 💻
+        url: https://github.com/Lissy93/dashy/blob/master/docs/management.md
+        id: 3_926_management
+      - title: Troubleshooting
+        icon: 🚒
+        url: https://github.com/Lissy93/dashy/blob/master/docs/troubleshooting.md
+        id: 4_926_troubleshooting
+      - title: Developing
+        icon: 🧱
+        url: https://github.com/Lissy93/dashy/blob/master/docs/developing.md
+        id: 5_926_developing
+      - title: Dev Guides
+        icon: 🛎️
+        url: >-
+          https://github.com/Lissy93/dashy/blob/master/docs/development-guides.md
+        id: 6_926_devguides
+      - title: Contributing
+        icon: 💖
+        url: https://github.com/Lissy93/dashy/blob/master/docs/contributing.md
+        id: 7_926_contributing
+      - title: Showcase
+        icon: 🌟
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        id: 8_926_showcase
+      - title: Credits
+        icon: 🏆
+        url: https://github.com/Lissy93/dashy/blob/master/docs/credits.md
+        id: 9_926_credits
+  - name: Feature Docs
+    icon: fas fa-book-spells
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+    items:
+      - title: Authentication
+        icon: 🛡️
+        url: https://github.com/Lissy93/dashy/blob/master/docs/authentication.md
+        id: 0_1141_authentication
+      - title: Alternate Views
+        icon: 🧿
+        url: https://github.com/Lissy93/dashy/blob/master/docs/alternate-views.md
+        id: 1_1141_alternateviews
+      - title: Backup & Restore
+        icon: 💾
+        url: https://github.com/Lissy93/dashy/blob/master/docs/backup-restore.md
+        id: 2_1141_backuprestore
+      - title: Icons
+        icon: 🧸
+        url: https://github.com/Lissy93/dashy/blob/master/docs/icons.md
+        id: 3_1141_icons
+      - title: Language Switching
+        icon: 🌐
+        url: >-
+          https://github.com/Lissy93/dashy/blob/master/docs/multi-language-support.md
+        id: 4_1141_languageswitching
+      - title: Status Indicators
+        icon: 🚦
+        url: https://github.com/Lissy93/dashy/blob/master/docs/status-indicators.md
+        id: 5_1141_statusindicators
+      - title: Searching  & Shortcuts
+        icon: 🔍
+        url: https://github.com/Lissy93/dashy/blob/master/docs/searching.md
+        id: 6_1141_searchingshortcuts
+      - title: Theming
+        icon: 🎨
+        url: https://github.com/Lissy93/dashy/blob/master/docs/theming.md
+        id: 7_1141_theming
   - name: Internal Tools (Private)
     icon: fas fa-lock-alt
     displayData:
