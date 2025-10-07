@@ -137,6 +137,44 @@ sections:
         url: https://console.cloud.google.com/firestore/databases?project=amazing-modem-199209
         icon: favicon
         id: 2_2115_firestore_stg
+  - name: OMS GCP Projects
+    icon: fas fa-cloud
+    items:
+      - title: OMS Dev
+        description: OMS Dev Project
+        url: https://console.cloud.google.com/welcome?project=airasia-oms-dev
+        icon: favicon
+      - title: OMS PPD
+        description: OMS PPD Project
+        url: https://console.cloud.google.com/welcome?project=airasia-oms-ppd
+        icon: favicon
+      - title: OMS Prod
+        description: OMS Prod Project
+        url: https://console.cloud.google.com/welcome?project=airasia-oms-prd
+        icon: favicon
+      - title: OMS Stage
+        description: OMS Stage Project
+        url: https://console.cloud.google.com/welcome?project=airasia-oms-stg
+        icon: favicon
+  - name: Avalon GCP Projects
+    icon: fas fa-cloud
+    items:
+      - title: Avalon Dev
+        description: Avalon Dev Project
+        url: https://console.cloud.google.com/welcome?project=airasia-avalon-dev
+        icon: favicon
+      - title: Avalon PPD
+        description: Avalon PPD Project
+        url: https://console.cloud.google.com/welcome?project=airasia-avalon-ppd
+        icon: favicon
+      - title: Avalon Prod
+        description: Avalon Prod Project
+        url: https://console.cloud.google.com/welcome?project=airasia-avalon-prd
+        icon: favicon
+      - title: Avalon Stage
+        description: Avalon Stage Project
+        url: https://console.cloud.google.com/welcome?project=airasia-avalon-stg
+        icon: favicon
   - name: Important Portals
     icon: fas fa-rocket-launch
     items:
@@ -147,7 +185,7 @@ sections:
         id: 0_2221_backoffice_admin_portal
       - title: Moths
         description: Crashlytics Dashboard
-        icon:
+        icon: favicon
         url: https://lookerstudio.google.com/reporting/7de4eae7-d959-4923-ba02-36a6e90031a4/page/tEnnC
         id: 1_2221_moths_crashlytics_dashboard
       - title: Clockify
@@ -175,7 +213,7 @@ sections:
     icon: fas fa-sparkles
     items:
       - title: HackerTab
-        icon: generative
+        icon: favicon
         url: https://now.hackertab.dev/
         id: 0_1998_hacker_tab
       - title: Daily Dev
@@ -231,6 +269,44 @@ sections:
         url: https://dashy.to
         statusCheck: true
         id: 2_1288_unknown
+  - name: Developer Productivity
+    icon: fas fa-laptop-code
+    displayData:
+      itemSize: medium
+      sortBy: default
+      sectionLayout: grid
+      itemCountX: 3
+    items:
+      - title: CodeSandbox
+        description: Online code editor
+        icon: favicon
+        url: https://codesandbox.io/
+        id: 0_1289_codesandbox
+      - title: Regex101
+        description: Regular expression tester
+        icon: favicon
+        url: https://regex101.com/
+        id: 1_1289_regex101
+      - title: Postman
+        description: API platform for building and using APIs
+        icon: favicon
+        url: https://www.postman.com/
+        id: 2_1289_postman
+      - title: JSONLint
+        description: JSON validator
+        icon: favicon
+        url: https://jsonlint.com/
+        id: 3_1289_jsonlint
+      - title: Crontab Guru
+        description: Cron schedule expression editor
+        icon: favicon
+        url: https://crontab.guru/
+        id: 4_1289_crontab_guru
+      - title: BundlePhobia
+        description: Find the cost of adding a new dependency
+        icon: favicon
+        url: https://bundlephobia.com/
+        id: 5_1289_bundlephobia
   - name: Repo
     icon: fab fa-github-alt
     displayData:
@@ -240,43 +316,43 @@ sections:
     items:
       - title: Issues
         url: https://github.com/Lissy93/dashy/issues
-        icon: generative
+        icon: favicon
         id: 0_406_issues
       - title: Pull Requests
         url: https://github.com/Lissy93/dashy/pulls
-        icon: generative
+        icon: favicon
         id: 1_406_pullrequests
       - title: Releases
         url: https://github.com/Lissy93/dashy/releases
-        icon: generative
+        icon: favicon
         id: 2_406_releases
       - title: Discussions
         url: https://github.com/Lissy93/dashy/discussions
-        icon: generative
+        icon: favicon
         id: 3_406_discussions
       - title: Packages
         url: https://github.com/Lissy93?tab=packages&repo_name=dashy
-        icon: generative
+        icon: favicon
         id: 4_406_packages
       - title: Insights
         url: https://github.com/Lissy93/dashy/pulse
-        icon: generative
+        icon: favicon
         id: 5_406_insights
       - title: Wiki
         url: https://github.com/Lissy93/dashy/wiki
-        icon: generative
+        icon: favicon
         id: 6_406_wiki
       - title: Security
         url: https://github.com/Lissy93/dashy/security
-        icon: generative
+        icon: favicon
         id: 7_406_security
       - title: Contributors
         url: https://github.com/Lissy93/dashy/graphs/contributors
-        icon: generative
+        icon: favicon
         id: 8_406_contributors
       - title: Actions
         url: https://github.com/Lissy93/dashy/actions
-        icon: generative
+        icon: favicon
         id: 9_406_actions
   - name: Usage Docs
     icon: fas fa-book
@@ -411,58 +487,58 @@ sections:
       cols: 2
       rows: 2
     items:
-      - title: Netlify
-        description: Deploy to Netlify with 1-Click
-        icon: favicon
-        url: >-
-          https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/dashy
-        provider: Netlify
-        statusCheck: true
-        id: 0_1768_netlify
-      - title: Heroku
-        description: Heroku Element App
-        provider: Heroku
-        icon: favicon
-        url: https://elements.heroku.com/buttons/lissy93/dashy
-        statusCheck: true
-        id: 1_1768_heroku
-      - title: DockerHub
-        description: Docker container
-        icon: favicon
-        url: https://hub.docker.com/r/lissy93/dashy
-        statusCheck: true
-        id: 2_1768_dockerhub
-      - title: PWD
-        description: Sandbox environment
-        icon: https://www.docker.com/sites/default/files/Whale%20Logo332_5.png
-        url: >-
-          https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/Lissy93/dashy/master/docker-compose.yml
-        statusCheck: true
-        id: 3_1768_pwd
-      - title: CloudFlare Workers
-        description: Deploy Dashy to a Cloudflare Worker
-        provider: Cloudflare
-        icon: https://dash.cloudflare.com/favicon.ico
-        url: >-
-          https://deploy.workers.cloudflare.com/?url=https://github.com/lissy93/dashy/tree/deploy_cloudflare
-        statusCheck: true
-        id: 4_1768_cloudflareworkers
-      - title: Vercel
-        description: Deploy Dashy to Vercel
-        provider: Vercel
-        icon: favicon
-        url: >-
-          https://vercel.com/new/project?template=https://github.com/lissy93/dashy
-        statusCheck: true
-        id: 5_1768_vercel
-      - title: Digital Ocean App
-        description: Deploy Dashy to DO
-        provider: Digital Ocean
-        icon: favicon
-        url: >-
-          https://cloud.digitalocean.com/apps/new?repo=https://github.com/lissy93/dashy/tree/deploy_digital-ocean
-        statusCheck: true
-        id: 6_1768_digitaloceanapp
+      # - title: Netlify
+      #   description: Deploy to Netlify with 1-Click
+      #   icon: favicon
+      #   url: >-
+      #     https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/dashy
+      #   provider: Netlify
+      #   statusCheck: true
+      #   id: 0_1768_netlify
+      # - title: Heroku
+      #   description: Heroku Element App
+      #   provider: Heroku
+      #   icon: favicon
+      #   url: https://elements.heroku.com/buttons/lissy93/dashy
+      #   statusCheck: true
+      #   id: 1_1768_heroku
+      # - title: DockerHub
+      #   description: Docker container
+      #   icon: favicon
+      #   url: https://hub.docker.com/r/lissy93/dashy
+      #   statusCheck: true
+      #   id: 2_1768_dockerhub
+      # - title: PWD
+      #   description: Sandbox environment
+      #   icon: https://www.docker.com/sites/default/files/Whale%20Logo332_5.png
+      #   url: >-
+      #     https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/Lissy93/dashy/master/docker-compose.yml
+      #   statusCheck: true
+      #   id: 3_1768_pwd
+      # - title: CloudFlare Workers
+      #   description: Deploy Dashy to a Cloudflare Worker
+      #   provider: Cloudflare
+      #   icon: https://dash.cloudflare.com/favicon.ico
+      #   url: >-
+      #     https://deploy.workers.cloudflare.com/?url=https://github.com/lissy93/dashy/tree/deploy_cloudflare
+      #   statusCheck: true
+      #   id: 4_1768_cloudflareworkers
+      # - title: Vercel
+      #   description: Deploy Dashy to Vercel
+      #   provider: Vercel
+      #   icon: favicon
+      #   url: >-
+      #     https://vercel.com/new/project?template=https://github.com/lissy93/dashy
+      #   statusCheck: true
+      #   id: 5_1768_vercel
+      # - title: Digital Ocean App
+      #   description: Deploy Dashy to DO
+      #   provider: Digital Ocean
+      #   icon: favicon
+      #   url: >-
+      #     https://cloud.digitalocean.com/apps/new?repo=https://github.com/lissy93/dashy/tree/deploy_digital-ocean
+      #   statusCheck: true
+      #   id: 6_1768_digitaloceanapp
       - title: GCP Deploy
         description: Deploy Dashy to GCP
         provider: Google
@@ -503,25 +579,25 @@ sections:
       - title: Schema Example
         url: >-
           https://json-schema.app/view/%23?url=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fdashy%2Fmaster%2Fsrc%2Futils%2FConfigSchema.json
-        icon: generative
+        icon: favicon
         id: 0_1353_schemaexample
       - title: Config Validator
         url: https://www.jsonschemavalidator.net/s/JFUj7X9J
-        icon: generative
+        icon: favicon
         id: 1_1353_configvalidator
       - title: JSON to YAML
         url: https://jsonformatter.org/json-to-yaml
-        icon: generative
+        icon: favicon
         id: 2_1353_jsontoyaml
       - title: YAML to JSON
         url: https://jsonformatter.org/yaml-to-json
-        icon: generative
+        icon: favicon
         id: 3_1353_yamltojson
       - title: Example Configs
         url: https://gist.github.com/Lissy93/000f712a5ce98f212817d20bc16bab10
-        icon: generative
+        icon: favicon
         id: 4_1353_exampleconfigs
       - title: Config Docs
         url: https://dashy.to/docs/configuring
-        icon: generative
+        icon: favicon
         id: 5_1353_configdocs
