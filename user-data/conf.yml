@@ -23,14 +23,15 @@ appConfig:
   workspaceLandingUrl: itsiqbal.com
   enableMultiTasking: false
   layout: auto
-  iconSize: medium
+  iconSize: small
   language: en
 pageInfo:
-  title: Home
+  title: StackView
   description: Quick Links to all the important things.
   navLinks:
     - title: Jira
-      path: https://airasia.atlassian.net/jira/software/c/projects/AAR/boards/563?assignee=63b7d1daf3e7004f77ff60ae
+      path: >-
+        https://airasia.atlassian.net/jira/software/c/projects/AAR/boards/563?assignee=63b7d1daf3e7004f77ff60ae
     - title: GitLab
       path: https://gitlab.com/airasia-superapp/delivery/aa-ride
     - title: GitHub
@@ -40,106 +41,28 @@ pageInfo:
   footerText: ''
   logo: https://i.ibb.co/qWWpD0v/astro-dab-128.png
 sections:
-  - name: Code & Monitoring
-    icon: fas fa-code
+  - name: Core GCP Projects
+    icon: fas fa-cloud
     displayData:
-      sortBy: default
+      itemSize: small
       sectionLayout: grid
-      itemCountX: 5
+      itemCountX: 4
       cols: 2
-    items:
-      - title: Ride Repositories
-        description: Ride Repositories
-        icon: favicon
-        url: https://gitlab.com/airasia-superapp/delivery/aa-ride
-        id: 0_2411_ride_repos
-      - title: Programmiz
-        description: Online javascript compiler
-        icon: favicon
-        url: https://www.programiz.com/javascript/online-compiler/
-        id: 1_2411_programiz
-      - title: TS-Playground
-        description: Typescript
-        icon: favicon
-        url: https://www.typescriptlang.org/play
-        id: 0_2411_typescript_play_ground
-      - title: Ride firebase
-        description: Ride firebase
-        url: https://console.firebase.google.com/u/0/project/dacsee-global/config/env/firebase
-        icon: favicon
-        id: 3_2411_ride_firebase
-      - title: Sonatype
-        description: Automated code security scanning
-        icon: favicon
-        url: >-
-          https://lift.sonatype.com/result/Lissy93/dashy/01FBPFJZ4H6ANMK8BEE9A15R5V?tab=results
-        id: 4_2411_sonatype
-      - title: DeepSource
-        description: Source code analysis
-        icon: favicon
-        url: https://deepsource.io/gh/Lissy93/dashy/issues
-        id: 5_2411_deepsource
-      - title: DeepScan
-        description: Static analysis for finding runtime errors and quality issues
-        url: >-
-          https://deepscan.io/dashboard#view=project&tid=12411&pid=18128&bid=437203
-        icon: favicon
-        id: 6_2411_deepscan
-      - title: LGTM
-        description: Prevention of zero-days through static analysis
-        url: https://lgtm.com/projects/g/Lissy93/dashy
-        icon: favicon
-        id: 7_2411_lgtm
-      - title: CodeSense
-        description: Project stats and trends
-        url: https://codescene.io/projects/17448/jobs/223149/results
-        icon: favicon
-        id: 8_2411_codesense
-      - title: David-DM
-        description: Dependency Update Checking
-        url: https://david-dm.org/lissy93/dashy
-        icon: favicon
-        id: 9_2411_daviddm
-  - name: Google Cloud + Fire-stores
-    icon: fas fa-cloud
-    displayData:
       hideForUsers:
-        - alicia
-      sortBy: most-used
+        - guest
     items:
-      - title: Ride GCP dev
-        description: Ride - google cloud dev project
-        url: https://console.cloud.google.com/welcome?hl=en&project=airasia-ride-dev
+      - title: Ride Dev
+        description: Ride Dev Project
+        url: https://console.cloud.google.com/welcome?project=airasia-ride-dev
         icon: favicon
-        id: 0_2115_gcp_dev
-      - title: Ride GCP stg
-        description: Ride - google cloud stg project
-        url: https://console.cloud.google.com/welcome?hl=en&project=airasia-ride-stg-368614
+      - title: Ride Stage
+        description: Ride Stage Project
+        url: https://console.cloud.google.com/welcome?project=airasia-ride-stg-368614
         icon: favicon
-        id: 1_2115_gcp_stg
-      - title: Ride GCP PRD
-        description: Ride - google cloud PRD project
-        url: https://console.cloud.google.com/welcome?hl=en&project=amazing-modem-199209
+      - title: Ride Prod
+        description: Ride Prod Project
+        url: https://console.cloud.google.com/welcome?project=amazing-modem-199209
         icon: favicon
-        id: 1_2115_gcp_prd
-      - title: FireStore Dev
-        description: FireStore Dev project
-        url: https://console.cloud.google.com/firestore/databases?hl=en&project=airasia-ride-dev
-        icon: favicon
-        id: 2_2115_firestore_dev
-      - title: FireStore STG
-        description: FireStore STG project
-        url: https://console.cloud.google.com/firestore/databases?project=airasia-ride-stg-368614&hl=en
-        icon: favicon
-        id: 2_2115_firestore_stg
-      - title: FireStore PRD
-        description: FireStore PRD project
-        url: https://console.cloud.google.com/firestore/databases?project=amazing-modem-199209
-        icon: favicon
-        id: 2_2115_firestore_stg
-  - name: OMS GCP Projects
-    icon: fas fa-cloud
-    items:
       - title: OMS Dev
         description: OMS Dev Project
         url: https://console.cloud.google.com/welcome?project=airasia-oms-dev
@@ -156,9 +79,6 @@ sections:
         description: OMS Stage Project
         url: https://console.cloud.google.com/welcome?project=airasia-oms-stg
         icon: favicon
-  - name: Avalon GCP Projects
-    icon: fas fa-cloud
-    items:
       - title: Avalon Dev
         description: Avalon Dev Project
         url: https://console.cloud.google.com/welcome?project=airasia-avalon-dev
@@ -175,59 +95,83 @@ sections:
         description: Avalon Stage Project
         url: https://console.cloud.google.com/welcome?project=airasia-avalon-stg
         icon: favicon
+      - title: Maps Prod
+        description: Maps Prod Project
+        url: https://console.cloud.google.com/welcome?project=airasia-maps-prd
+        icon: favicon
+      - title: Maps Stage
+        description: Maps Stage Project
+        url: https://console.cloud.google.com/welcome?project=airasia-maps-stg
+        icon: favicon
+      - title: Firebase
+        description: Firebase Project
+        url: https://console.cloud.google.com/welcome?project=airasia-firebase
+        icon: favicon
+      - title: Firebase Staging
+        description: Firebase Staging Project
+        url: https://console.cloud.google.com/welcome?project=airasia-firebase-staging
+        icon: favicon
+      - title: Firestore Dev US
+        description: Firestore Dev US Project
+        url: https://console.cloud.google.com/welcome?project=airasia-firestore-dev-us
+        icon: favicon
   - name: Important Portals
+    displayData:
+      cols: 1
+      itemSize: medium
+      sectionLayout: grid
+      itemCountX: 2
     icon: fas fa-rocket-launch
     items:
-      - title: Backoffice Admin
-        description: Backoffice admin portal
-        url: https://ride.stgairasia.com/admin/MY
+      - title: OMS Dashboard (STG)
+        description: OMS Dashboard (STG)
+        url: https://oms-dashboard.stgairasia.com/#/dashboard/landing
         icon: fas fa-rocket-launch
-        id: 0_2221_backoffice_admin_portal
+        id: 0_1731_dashboard_admin
       - title: Moths
         description: Crashlytics Dashboard
         icon: favicon
-        url: https://lookerstudio.google.com/reporting/7de4eae7-d959-4923-ba02-36a6e90031a4/page/tEnnC
-        id: 1_2221_moths_crashlytics_dashboard
+        url: >-
+          https://lookerstudio.google.com/reporting/7de4eae7-d959-4923-ba02-36a6e90031a4/page/tEnnC
+        id: 1_1731_moths
       - title: Clockify
         description: Time logs for company
         provider: Up Down
         url: https://app.clockify.me/tracker
         icon: favicon
-        id: 2_2221_statuspage
-      - title: GitLocalize
+        id: 2_1731_clockify
+      - title: Signoz (STG)
         description: Localisation tool
-        icon: https://avatars.githubusercontent.com/u/25833116
-        url: https://gitlocalize.com/repo/6279
-        id: 3_2221_gitlocalize
+        icon: https://private-user-images.githubusercontent.com/83692067/375959924-ef9a33f7-12d7-4c94-8908-0a02b22f0c18.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEzMjgzNDcsIm5iZiI6MTc2MTMyODA0NywicGF0aCI6Ii84MzY5MjA2Ny8zNzU5NTk5MjQtZWY5YTMzZjctMTJkNy00Yzk0LTg5MDgtMGEwMmIyMmYwYzE4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI0VDE3NDcyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxMTM5NGNjYmYzOWIwMjRmMjMyYWIyNmRmZjRmOGNmNGIwODNhMzI0M2ZiNTlkMmY5NTRkMTE0ZTU2NWU1YTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.T7W8vycxbFn2vqw5hDA4qKEfxyTDVCyfCVKYOXdrp0Y
+        url: https://signoz-npd.airasiamovetech.com/home
+        id: 3_1731_signoz
+
+      - title: Signoz (PRD)
+        description: Localisation tool
+        icon: https://private-user-images.githubusercontent.com/83692067/375959924-ef9a33f7-12d7-4c94-8908-0a02b22f0c18.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEzMjgzNDcsIm5iZiI6MTc2MTMyODA0NywicGF0aCI6Ii84MzY5MjA2Ny8zNzU5NTk5MjQtZWY5YTMzZjctMTJkNy00Yzk0LTg5MDgtMGEwMmIyMmYwYzE4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI0VDE3NDcyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxMTM5NGNjYmYzOWIwMjRmMjMyYWIyNmRmZjRmOGNmNGIwODNhMzI0M2ZiNTlkMmY5NTRkMTE0ZTU2NWU1YTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.T7W8vycxbFn2vqw5hDA4qKEfxyTDVCyfCVKYOXdrp0Y
+        url: https://signoz-npd.airasiamovetech.com/home
+        id: 3_1731_signoz
       - title: Viezly
         description: Tool for analyzing pull requests
         url: https://viezly.com/change_requests/3417
         icon: favicon
-        id: 4_2221_viezly
-      - title: VS Code
-        description: Open Dashy's source code in the VS Code IDE
-        url: https://open.vscode.dev/Lissy93/Dashy
-        icon: favicon
-        id: 5_2221_vscode
+        id: 4_1731_viezly
   - name: Socials & Review Sites
     icon: fas fa-sparkles
+    displayData:
+      cols: 2
+      itemSize: medium
+      sectionLayout: grid
+      itemCountX: 4
     items:
       - title: HackerTab
         icon: favicon
         url: https://now.hackertab.dev/
-        id: 0_1998_hacker_tab
+        id: 0_1998_hackertab
       - title: Daily Dev
         url: https://app.daily.dev/
         icon: favicon
-        id: 1_1998_daily_dev
-      - title: Freedium
-        icon: favicon
-        url: https://freedium.cfd/
-        id: 2_1998_freedium
-      - title: StackShare
-        url: https://stackshare.io/Lissy93/dashy
-        icon: favicon
-        id: 3_1998_stackshare
+        id: 1_1998_dailydev
       - title: Slant
         icon: favicon
         url: >-
@@ -238,78 +182,349 @@ sections:
         icon: favicon
         url: https://github.com/sponsors/Lissy93
         id: 5_1998_ghsponsors
-  - name: Tools
-    icon: fas fa-traffic-light-go
-    displayData:
-      itemSize: large
-      sortBy: default
-      sectionLayout: grid
-      itemCountX: 2
-    items:
-      - title: 'Pomodoro'
-        description: Pomodoro Timer
+      - title: Hacker News
+        description: Developer news and discussions
+        url: https://news.ycombinator.com/
         icon: favicon
-        url: https://www.toptal.com/project-managers/tomato-timer
-        id: 0_1288_pomodoro
-      - title: 'Excel Draw'
-        description: ExcelDraw
+      - title: Lobsters
+        description: Computing-focused community
+        url: https://lobste.rs/
         icon: favicon
-        url: https://excalidraw.com/
-        id: 0_1288_exceldraw
-      - title: ''
-        description: Example instance with demo data
-        icon: https://i.ibb.co/bzVTYMx/live-demo.png
-        url: https://demo.dashy.to
-        statusCheck: true
-        statusCheckAllowInsecure: true
-        id: 1_1288_unknown
-      - title: ''
-        description: Documentation and info website
-        icon: https://i.ibb.co/f8GxrfC/docs-site.png
-        url: https://dashy.to
-        statusCheck: true
-        id: 2_1288_unknown
-  - name: Developer Productivity
-    icon: fas fa-laptop-code
-    displayData:
-      itemSize: medium
-      sortBy: default
-      sectionLayout: grid
-      itemCountX: 3
+      - title: Indie Hackers
+        description: A community of independent developers
+        url: https://www.indiehackers.com/
+        icon: favicon
+      - title: Product Hunt
+        description: The place to discover new products
+        url: https://www.producthunt.com/
+        icon: favicon
+      - title: DEV Community
+        description: A community of software developers
+        url: https://dev.to/
+        icon: favicon
+      - title: r/programming
+        description: Subreddit for programming news and discussions
+        url: https://www.reddit.com/r/programming/
+        icon: favicon
+      - title: r/webdev
+        description: Subreddit for web development
+        url: https://www.reddit.com/r/webdev/
+        icon: favicon
+      - title: TechCrunch
+        description: The latest technology news and information on startups
+        url: https://techcrunch.com/
+        icon: favicon
+      - title: Ars Technica
+        description: In-depth technology news
+        url: https://arstechnica.com/
+        icon: favicon
+      - title: Smashing Magazine
+        description: For web designers and developers
+        url: https://www.smashingmagazine.com/
+        icon: favicon
+      - title: A List Apart
+        description: For people who make websites
+        url: https://alistapart.com/
+        icon: favicon
+  - name: Developer Resources
+    icon: fas fa-book-reader
     items:
+      - title: Programmiz
+        description: Online javascript compiler
+        icon: favicon
+        url: https://www.programiz.com/javascript/online-compiler/
+        id: 1_1543_programmiz
+      - title: TS-Playground
+        description: Typescript
+        icon: favicon
+        url: https://www.typescriptlang.org/play
+        id: 2_1543_tsplayground
+      - title: MDN Web Docs
+        description: Resources for developers, by developers
+        url: https://developer.mozilla.org/
+        icon: favicon
+        id: 1_1921_mdnwebdocs
+      - title: DevDocs
+        description: API documentation for web technologies
+        url: https://devdocs.io/
+        icon: favicon
+        id: 2_1921_devdocs
+      - title: Can I use...
+        description: Browser support tables for HTML, CSS, etc.
+        url: https://caniuse.com/
+        icon: favicon
+        id: 3_1921_caniuse
       - title: CodeSandbox
         description: Online code editor
         icon: favicon
         url: https://codesandbox.io/
-        id: 0_1289_codesandbox
+        id: 0_2268_codesandbox
       - title: Regex101
         description: Regular expression tester
         icon: favicon
         url: https://regex101.com/
-        id: 1_1289_regex101
-      - title: Postman
-        description: API platform for building and using APIs
-        icon: favicon
-        url: https://www.postman.com/
-        id: 2_1289_postman
+        id: 1_2268_regex
       - title: JSONLint
         description: JSON validator
         icon: favicon
         url: https://jsonlint.com/
-        id: 3_1289_jsonlint
+        id: 3_2268_jsonlint
       - title: Crontab Guru
         description: Cron schedule expression editor
         icon: favicon
         url: https://crontab.guru/
-        id: 4_1289_crontab_guru
+        id: 4_2268_crontabguru
       - title: BundlePhobia
         description: Find the cost of adding a new dependency
         icon: favicon
         url: https://bundlephobia.com/
-        id: 5_1289_bundlephobia
+        id: 5_2268_bundlephobia
+      - title: gitignore.io
+        description: Create useful .gitignore files for your project
+        url: https://www.toptal.com/developers/gitignore
+        icon: favicon
+        id: 4_1921_gitignoreio
+      - title: Choose a License
+        description: Choose an open source license
+        url: https://choosealicense.com/
+        icon: favicon
+        id: 5_1921_choosealicense
+  - name: Code & Monitoring
+    icon: fas fa-code
+    displayData:
+      collapsed: true
+      sortBy: default
+      sectionLayout: grid
+      itemCountX: 5
+      cols: 3
+    items:
+      - title: Avalon 1
+        description: Avalon 1
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/avalon-1/-/merge_requests?scope=all
+      - title: Avalon Firestore Tracker Cf
+        description: Avalon Firestore Tracker Cf
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/avalon-firestore-tracker-cf/-/merge_requests?scope=all
+      - title: Avalon Move Anonymous Order
+        description: Avalon Move Anonymous Order
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/cloud-functions-python/avalon-move-anonymous-order/-/merge_requests?scope=all
+      - title: Avalon Sso Sync Service
+        description: Avalon Sso Sync Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/avalon-sso-sync-service/-/merge_requests?scope=all
+      - title: Ccstl Transformation Function
+        description: Ccstl Transformation Function
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/ccstl-transformation-function/-/merge_requests?scope=all
+      - title: Ch Oms Communication Api Function
+        description: Ch Oms Communication Api Function
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/ch-oms-communication-api-function/-/merge_requests?scope=all
+      - title: Checkout Service
+        description: Checkout Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/checkout-service/-/merge_requests?scope=all
+      - title: Common Service
+        description: Common Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/common-service/-/merge_requests?scope=all
+      - title: Dashboard Backend Action Runner
+        description: Dashboard Backend Action Runner
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-dashboard/dashboard-backend-action-runner/-/merge_requests?scope=all
+      - title: Einvoice Be
+        description: Einvoice Be
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/einvoice/einvoice-be/-/merge_requests?scope=all
+      - title: Einvoice Fe
+        description: Einvoice Fe
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/einvoice/einvoice-fe/-/merge_requests?scope=all
+      - title: Einvoice V2 Be
+        description: Einvoice V2 Be
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/einvoice/einvoice-v2-be/-/merge_requests?scope=all
+      - title: Gitlab Cicd Template
+        description: Gitlab Cicd Template
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/gitlab-cicd-template/-/merge_requests?scope=all
+      - title: Invoke_recon
+        description: Invoke_recon
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/cloud-functions-python/invoke_recon/-/merge_requests?scope=all
+      - title: Ledger Service
+        description: Ledger Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/ledger-service/-/merge_requests?scope=all
+      - title: Mmb Aggregator
+        description: Mmb Aggregator
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/my-orders/mmb-aggregator/-/merge_requests?scope=all
+      - title: Mmb App
+        description: Mmb App
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/my-orders/mmb-app/-/merge_requests?scope=all
+      - title: Navitaire Flight Data Sync
+        description: Navitaire Flight Data Sync
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/navitaire-flight-data-sync/-/merge_requests?scope=all
+      - title: Oms Api Automation Test
+        description: Oms Api Automation Test
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-api-automation-test/-/merge_requests?scope=all
+      - title: Oms Api Gateway
+        description: Oms Api Gateway
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-api-gateway/-/merge_requests?scope=all
+      - title: Oms Auth Service
+        description: Oms Auth Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-auth-service/-/merge_requests?scope=all
+      - title: Oms Avalon Service
+        description: Oms Avalon Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-avalon-service/-/merge_requests?scope=all
+      - title: Oms Bigpoints Service
+        description: Oms Bigpoints Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-bigpoints-service/-/merge_requests?scope=all
+      - title: Oms Dashboard Backend
+        description: Oms Dashboard Backend
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-dashboard/oms-dashboard-backend/-/merge_requests?scope=all
+      - title: Oms Dashboard Frontend
+        description: Oms Dashboard Frontend
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-dashboard/oms-dashboard-frontend/-/merge_requests?scope=all
+      - title: Oms Kong
+        description: Oms Kong
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-kong/-/merge_requests?scope=all
+      - title: Oms Order Number Generator Service
+        description: Oms Order Number Generator Service
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-order-number-generator-service/-/merge_requests?scope=all
+      - title: Oms Pentest
+        description: Oms Pentest
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/oms-pentest/-/merge_requests?scope=all
+      - title: Order Recon Cloud Function
+        description: Order Recon Cloud Function
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/order-recon-cloud-function/-/merge_requests?scope=all
+      - title: Sync Avalon Flight Sso Data
+        description: Sync Avalon Flight Sso Data
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/platforms/oms/sync-avalon-flight-sso-data/-/merge_requests?scope=all
+      - title: Ride Repositories
+        description: Ride Repositories
+        icon: favicon
+        url: https://gitlab.com/airasia-superapp/delivery/aa-ride
+        id: 0_1543_riderepositories
+      - title: Ride firebase
+        description: Ride firebase
+        url: >-
+          https://console.firebase.google.com/u/0/project/dacsee-global/config/env/firebase
+        icon: favicon
+        id: 3_1543_ridefirebase
+      - title: Sonatype
+        description: Automated code security scanning
+        icon: favicon
+        url: >-
+          https://lift.sonatype.com/result/Lissy93/dashy/01FBPFJZ4H6ANMK8BEE9A15R5V?tab=results
+        id: 4_1543_sonatype
+      - title: DeepSource
+        description: Source code analysis
+        icon: favicon
+        url: https://deepsource.io/gh/Lissy93/dashy/issues
+        id: 5_1543_deepsource
+      - title: DeepScan
+        description: Static analysis for finding runtime errors and quality issues
+        url: >-
+          https://deepscan.io/dashboard#view=project&tid=12411&pid=18128&bid=437203
+        icon: favicon
+        id: 6_1543_deepscan
+      - title: LGTM
+        description: Prevention of zero-days through static analysis
+        url: https://lgtm.com/projects/g/Lissy93/dashy
+        icon: favicon
+        id: 7_1543_lgtm
+      - title: CodeSense
+        description: Project stats and trends
+        url: https://codescene.io/projects/17448/jobs/223149/results
+        icon: favicon
+        id: 8_1543_codesense
+      - title: David-DM
+        description: Dependency Update Checking
+        url: https://david-dm.org/lissy93/dashy
+        icon: favicon
+        id: 9_1543_daviddm
+      - title: Grafana
+        description: The open observability platform
+        icon: favicon
+        url: https://grafana.com/
+      - title: Prometheus
+        description: From metrics to insight
+        icon: favicon
+        url: https://prometheus.io/
+      - title: Datadog
+        description: See inside any stack, any app, at any scale, anywhere
+        icon: favicon
+        url: https://www.datadoghq.com/
+      - title: New Relic
+        description: Observability for every engineer
+        icon: favicon
+        url: https://newrelic.com/
+      - title: Sentry
+        description: Application monitoring and error tracking software
+        icon: favicon
+        url: https://sentry.io/
+  - name: Feature Docs
+    icon: fas fa-book-spells
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+    items:
+      - title: Authentication
+        icon: 🛡️
+        url: https://github.com/Lissy93/dashy/blob/master/docs/authentication.md
+        id: 0_1141_authentication
+      - title: Alternate Views
+        icon: 🧿
+        url: https://github.com/Lissy93/dashy/blob/master/docs/alternate-views.md
+        id: 1_1141_alternateviews
+      - title: Backup & Restore
+        icon: 💾
+        url: https://github.com/Lissy93/dashy/blob/master/docs/backup-restore.md
+        id: 2_1141_backuprestore
+      - title: Icons
+        icon: 🧸
+        url: https://github.com/Lissy93/dashy/blob/master/docs/icons.md
+        id: 3_1141_icons
+      - title: Language Switching
+        icon: 🌐
+        url: >-
+          https://github.com/Lissy93/dashy/blob/master/docs/multi-language-support.md
+        id: 4_1141_languageswitching
+      - title: Status Indicators
+        icon: 🚦
+        url: https://github.com/Lissy93/dashy/blob/master/docs/status-indicators.md
+        id: 5_1141_statusindicators
+      - title: Searching  & Shortcuts
+        icon: 🔍
+        url: https://github.com/Lissy93/dashy/blob/master/docs/searching.md
+        id: 6_1141_searchingshortcuts
+      - title: Theming
+        icon: 🎨
+        url: https://github.com/Lissy93/dashy/blob/master/docs/theming.md
+        id: 7_1141_theming
   - name: Repo
     icon: fab fa-github-alt
     displayData:
+      collapsed: true
       itemSize: small
       sectionLayout: grid
       itemCountX: 2
@@ -354,94 +569,6 @@ sections:
         url: https://github.com/Lissy93/dashy/actions
         icon: favicon
         id: 9_406_actions
-  - name: Usage Docs
-    icon: fas fa-book
-    displayData:
-      itemSize: small
-      sectionLayout: grid
-      itemCountX: 2
-    items:
-      - title: Quick Start
-        icon: 💨
-        url: https://github.com/Lissy93/dashy/blob/master/docs/quick-start.md
-        id: 0_926_quickstart
-      - title: Deployment
-        icon: 🚀
-        url: https://github.com/Lissy93/dashy/blob/master/docs/deployment.md
-        id: 1_926_deployment
-      - title: Configuring
-        icon: 🔧
-        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-        id: 2_926_configuring
-      - title: Management
-        icon: 💻
-        url: https://github.com/Lissy93/dashy/blob/master/docs/management.md
-        id: 3_926_management
-      - title: Troubleshooting
-        icon: 🚒
-        url: https://github.com/Lissy93/dashy/blob/master/docs/troubleshooting.md
-        id: 4_926_troubleshooting
-      - title: Developing
-        icon: 🧱
-        url: https://github.com/Lissy93/dashy/blob/master/docs/developing.md
-        id: 5_926_developing
-      - title: Dev Guides
-        icon: 🛎️
-        url: >-
-          https://github.com/Lissy93/dashy/blob/master/docs/development-guides.md
-        id: 6_926_devguides
-      - title: Contributing
-        icon: 💖
-        url: https://github.com/Lissy93/dashy/blob/master/docs/contributing.md
-        id: 7_926_contributing
-      - title: Showcase
-        icon: 🌟
-        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-        id: 8_926_showcase
-      - title: Credits
-        icon: 🏆
-        url: https://github.com/Lissy93/dashy/blob/master/docs/credits.md
-        id: 9_926_credits
-  - name: Feature Docs
-    icon: fas fa-book-spells
-    displayData:
-      itemSize: small
-      sectionLayout: grid
-      itemCountX: 2
-    items:
-      - title: Authentication
-        icon: 🛡️
-        url: https://github.com/Lissy93/dashy/blob/master/docs/authentication.md
-        id: 0_1141_authentication
-      - title: Alternate Views
-        icon: 🧿
-        url: https://github.com/Lissy93/dashy/blob/master/docs/alternate-views.md
-        id: 1_1141_alternateviews
-      - title: Backup & Restore
-        icon: 💾
-        url: https://github.com/Lissy93/dashy/blob/master/docs/backup-restore.md
-        id: 2_1141_backuprestore
-      - title: Icons
-        icon: 🧸
-        url: https://github.com/Lissy93/dashy/blob/master/docs/icons.md
-        id: 3_1141_icons
-      - title: Language Switching
-        icon: 🌐
-        url: >-
-          https://github.com/Lissy93/dashy/blob/master/docs/multi-language-support.md
-        id: 4_1141_languageswitching
-      - title: Status Indicators
-        icon: 🚦
-        url: https://github.com/Lissy93/dashy/blob/master/docs/status-indicators.md
-        id: 5_1141_statusindicators
-      - title: Searching  & Shortcuts
-        icon: 🔍
-        url: https://github.com/Lissy93/dashy/blob/master/docs/searching.md
-        id: 6_1141_searchingshortcuts
-      - title: Theming
-        icon: 🎨
-        url: https://github.com/Lissy93/dashy/blob/master/docs/theming.md
-        id: 7_1141_theming
   - name: Internal Tools (Private)
     icon: fas fa-lock-alt
     displayData:
@@ -487,58 +614,6 @@ sections:
       cols: 2
       rows: 2
     items:
-      # - title: Netlify
-      #   description: Deploy to Netlify with 1-Click
-      #   icon: favicon
-      #   url: >-
-      #     https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/dashy
-      #   provider: Netlify
-      #   statusCheck: true
-      #   id: 0_1768_netlify
-      # - title: Heroku
-      #   description: Heroku Element App
-      #   provider: Heroku
-      #   icon: favicon
-      #   url: https://elements.heroku.com/buttons/lissy93/dashy
-      #   statusCheck: true
-      #   id: 1_1768_heroku
-      # - title: DockerHub
-      #   description: Docker container
-      #   icon: favicon
-      #   url: https://hub.docker.com/r/lissy93/dashy
-      #   statusCheck: true
-      #   id: 2_1768_dockerhub
-      # - title: PWD
-      #   description: Sandbox environment
-      #   icon: https://www.docker.com/sites/default/files/Whale%20Logo332_5.png
-      #   url: >-
-      #     https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/Lissy93/dashy/master/docker-compose.yml
-      #   statusCheck: true
-      #   id: 3_1768_pwd
-      # - title: CloudFlare Workers
-      #   description: Deploy Dashy to a Cloudflare Worker
-      #   provider: Cloudflare
-      #   icon: https://dash.cloudflare.com/favicon.ico
-      #   url: >-
-      #     https://deploy.workers.cloudflare.com/?url=https://github.com/lissy93/dashy/tree/deploy_cloudflare
-      #   statusCheck: true
-      #   id: 4_1768_cloudflareworkers
-      # - title: Vercel
-      #   description: Deploy Dashy to Vercel
-      #   provider: Vercel
-      #   icon: favicon
-      #   url: >-
-      #     https://vercel.com/new/project?template=https://github.com/lissy93/dashy
-      #   statusCheck: true
-      #   id: 5_1768_vercel
-      # - title: Digital Ocean App
-      #   description: Deploy Dashy to DO
-      #   provider: Digital Ocean
-      #   icon: favicon
-      #   url: >-
-      #     https://cloud.digitalocean.com/apps/new?repo=https://github.com/lissy93/dashy/tree/deploy_digital-ocean
-      #   statusCheck: true
-      #   id: 6_1768_digitaloceanapp
       - title: GCP Deploy
         description: Deploy Dashy to GCP
         provider: Google
@@ -546,7 +621,7 @@ sections:
         url: >-
           https://deploy.cloud.run/?git_repo=https://github.com/lissy93/dashy.git
         statusCheck: true
-        id: 7_1768_gcpdeploy
+        id: 0_1768_gcpdeploy
       - title: Render
         description: Deploy Dashy to Render
         provider: Render
@@ -554,7 +629,7 @@ sections:
         url: >-
           https://render.com/deploy?repo=https://github.com/lissy93/dashy/tree/deploy_render
         statusCheck: true
-        id: 8_1768_render
+        id: 1_1768_render
       - title: Scalingo
         description: Deploy Dashy to Scalingo
         provider: Scalingo
@@ -562,12 +637,12 @@ sections:
         url: >-
           https://my.scalingo.com/deploy?source=https://github.com/lissy93/dashy#master
         statusCheck: true
-        id: 9_1768_scalingo
+        id: 2_1768_scalingo
       - title: View More
         description: See full list of deployment services
         icon: https://i.ibb.co/fGnr01r/astro-dab.png
         url: https://dashy.to/docs/deployment#deploy-to-cloud-service
-        id: 10_1768_viewmore
+        id: 3_1768_viewmore
   - name: Config Helpers
     icon: fas fa-wrench
     displayData:
